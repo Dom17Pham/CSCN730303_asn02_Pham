@@ -51,5 +51,12 @@ int main() {
 
 	file.close();
 
+	#ifdef _DEBUG
+	for (int c = 0; c < students.size(); c++) {
+		cout << students[c].get_last_name() << ",";
+		cout << students[c].get_first_name() << endl;
+	}
+	#endif
+
 	return 1;
 }
